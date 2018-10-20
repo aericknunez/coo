@@ -23,46 +23,7 @@
     </li>
     <!--/.Search Form-->
     <!-- Side navigation links -->
-    <li>
-        <ul class="collapsible collapsible-accordion">
-
-            <li><a href="?cobros" class="collapsible-header waves-effect arrow-r"><i class="fa fa-ban"></i> Cobros Pendientes<i class="fa fa-angle-down rotate-icon"></i></a></li>
-            
-            <li><a href="?conexion" class="collapsible-header waves-effect arrow-r"><i class="fa fa-tv"></i> Activar Conexi&oacuten<i class="fa fa-angle-down rotate-icon"></i></a></li>
-
-            <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Clientes<i class="fa fa-angle-down rotate-icon"></i></a>
-                <div class="collapsible-body">
-                    <ul class="list-unstyled">
-                        <li><a href="?addcliente" class="waves-effect">Agregar Cliente</a></li>
-                        <li><a href="?findcliente" class="waves-effect">Buscar Clientes</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i> Contratos<i class="fa fa-angle-down rotate-icon"></i></a>
-                <div class="collapsible-body">
-                    <ul class="list-unstyled">
-                        <li><a href="?cable" class="waves-effect">Agregar Contrato Cable</a></li>
-                        <li><a href="?internet" class="waves-effect">Agregar Contrato Internet</a></li>
-                     </ul>
-                </div>
-            </li>
-
-            <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-print"></i> Facturas<i class="fa fa-angle-down rotate-icon"></i></a>
-                <div class="collapsible-body">
-                    <ul class="list-unstyled">
-                        <li><a href="?imprimir" class="waves-effect">Imprimir</a></li>
-                        <li><a href="?generarfacturas" class="waves-effect">Generar Facturas</a></li>
-                     </ul>
-                </div>
-            </li>
-
-            <li><a href="?user" class="collapsible-header waves-effect arrow-r"><i class="fa fa-user"></i> Usuarios<i class="fa fa-angle-down rotate-icon"></i></a></li>
-
-            <li><a href="application/includes/logout.php" class="collapsible-header waves-effect arrow-r"><i class="fa fa-power-off"></i> Salir<i class="fa fa-angle-down rotate-icon"></i></a></li>
-            
-
-        </ul>
-    </li>
+<?php include_once 'menu.php'; ?>
     <hr>
     <small> Powered By</small>  
     <a href="https://www.hibridosv.com" target="_blank"><img src="assets/img/logo/lgb.png" class="img-fluid flex-center"></a>

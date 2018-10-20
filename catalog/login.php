@@ -36,9 +36,7 @@
 				<!-- <form class="login100-form validate-form"> -->
 				<form action="application/includes/process_login.php" method="post" name="login_form" class="login100-form validate-form" > 
 					<span class="login100-form-title">
-						<a href="?user=cocina@copacabana.com&pass=Copa1234" class="btn-floating btn-sm"><i class="fa fa-tv red-text fa-2x"></i></a>	
 						Iniciar Sesi&oacuten
-						<a href="?user=bar@copacabana.com&pass=Copa1234" class="btn-floating btn-sm"><i class="fa fa-beer red-text fa-2x"></i></a>
 					</span>
 						<?php
 				        if (isset($_GET['error'])) {
