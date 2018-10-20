@@ -4,6 +4,23 @@ class Usuarios{
 	public $pass1;
 	public $pass2;
 
+	function TerminarUsuario($nombre,$tipo,$user){
+	    $db = new dbConn();
+
+	$datos = array();
+    $datos["nombre"] = $nombre;
+    $datos["tipo"] = $tipo;
+    $datos["user"] = $user;
+    $datos["tkn"] = $user;
+    $datos["avatar"] = "1.png";
+    $datos["td"] = $_SESSION['td'];
+    if ($db->insert("login_userdata", $datos)) {
+        unset($_SESSION['newuser']);
+        echo '<h2>Usuario agregado con exito!</h2>';
+        echo '<a href="?user" class="btn btn-cyan">Terminar...</a>';
+   		 } 
+		$db->close();
+	}
 
 	public function CambiarPass($password) {
 			$db = new dbConn();

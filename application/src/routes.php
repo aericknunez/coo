@@ -37,6 +37,13 @@ $usuarios = new Usuarios;
 $usuarios->EliminarUsuario($_REQUEST["iden"], $_REQUEST["username"]);
 }
 
+if($_REQUEST["op"]=="4"){ // terminar usuario
+	if($_POST["nombre"] == NULL && $_POST["tipo"] == NULL){
+	include_once '../../system/user/Usuarios.php';
+	$usuarios = new Usuarios;
+	$usuarios->TerminarUsuario($_POST["nombre"],$_POST["tipo"],sha1($_SESSION['newuser']));	
+	}
 
+}
 
 ?>

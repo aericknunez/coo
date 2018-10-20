@@ -26,4 +26,25 @@ $(document).ready(function()
 	})
    
 	
+	$('#btn-user').click(function(e){ /// para el formulario
+		e.preventDefault();
+		$.ajax({
+			url: "application/src/routes.php?op=4",
+			method: "POST",
+			data: $("#form-user").serialize(),
+			success: function(data){
+				$("#caja_user").html(data);
+				$("#form-user").hide();
+				$("#form-user").trigger("reset");
+			}
+		})
+	})
+$("#form-user").keypress(function(e) {//Para deshabilitar el uso de la tecla "Enter"
+if (e.which == 13) {
+return false;
+}
+});
+
+
+
 });

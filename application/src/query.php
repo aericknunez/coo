@@ -10,8 +10,8 @@ echo '<script>
 		});
 	</script>';
 
-	if($_GET["modal"] == "addc"){
-	echo '<script type="text/javascript" src="assets/js/query/modal.addcliente.js"></script>';
+	if($_GET["modal"] == "register_success"){
+	echo '<script type="text/javascript" src="assets/js/query/user.js"></script>';
 	}
 
 
