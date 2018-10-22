@@ -13,10 +13,6 @@ class Helpers{
     if($string == "5") return '<p class="text-info font-weight-bold">Pausado</p>';
     }
 
-    function TipoServicio($string) {
-        if($string == "1") return "Servicio de cable por television";
-        if($string == "2") return "Servicio de Internet";
-    }
 
     function Telefono($numero) {
         if($numero == NULL){

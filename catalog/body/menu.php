@@ -3,6 +3,7 @@
 
             <li><a href="?socio" class="collapsible-header waves-effect arrow-r"><i class="fa fa-ban"></i> Socios<i class="fa fa-angle-down rotate-icon"></i></a></li>
             
+            <li><a href="?movimientos" class="collapsible-header waves-effect arrow-r"><i class="fa fa-ban"></i> Movimientos<i class="fa fa-angle-down rotate-icon"></i></a></li>
 
 
 
