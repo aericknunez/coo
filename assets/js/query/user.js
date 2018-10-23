@@ -29,7 +29,7 @@ $(document).ready(function()
 	$('#btn-user').click(function(e){ /// para el formulario
 		e.preventDefault();
 		$.ajax({
-			url: "application/src/routes.php?op=4",
+			url: "application/src/routes.php?op=0",
 			method: "POST",
 			data: $("#form-user").serialize(),
 			success: function(data){

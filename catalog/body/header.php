@@ -8,7 +8,7 @@
     <!-- Logo -->
     <li>
         <div class="logo-wrapper waves-light">
-            <a href="<?php echo BASE_URL ?>"><img src="assets/img/logo/logo.png" class="img-fluid flex-center"></a>
+            <a href="<?php echo BASE_URL ?>"><img src="assets/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>
         </div>
     </li>
     <!--/. Logo -->
@@ -43,6 +43,14 @@
     <p><?php echo $_SESSION["nombre"]; ?></p>
 </div>
 
+
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a href="?" class="nav-link"><i class="fa fa-home"></i> <span class="clearfix d-none d-sm-inline-block">Inicio</span></a>
+                </li> 
+
+            </ul>
+            
 </nav>
 <!-- /.Navbar -->
 </header>

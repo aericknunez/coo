@@ -1,6 +1,6 @@
 <?php 
 include_once 'application/common/Alerts.php';
-include_once 'application/common/mysqli.php';
+include_once 'application/common/Mysqli.php';
 include_once 'system/user/Usuarios.php';
 
 $db = new dbConn();

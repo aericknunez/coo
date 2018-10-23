@@ -7,14 +7,6 @@ sec_session_start();
 $user=sha1($_SESSION['username']);
 
 
-include_once '../common/Alerts.php';
-$alert = new Alerts;
-include_once '../common/Helpers.php';
-$helps = new Helpers;
-include_once '../common/Fechas.php';
-include_once '../common/mysqli.php';
-$db = new dbConn();
-
 
 	function UserInicio($user,$mysqli)
 	{
@@ -37,7 +29,7 @@ $db = new dbConn();
         $_SESSION['td'] = $td;
         $_SESSION['tx'] = 1;
 
-        include("../common/mysqli.php");
+        include("../common/Mysqli.php");
         }
 
         header("location: ../../index.php");

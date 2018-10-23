@@ -67,9 +67,9 @@ class Movimientos{
 	echo '<tr>
 	      <th scope="row">'. $b["id"] .'</th>
 	      <td>'. $nombre .'</td>
-	      <td>'. $b["movimiento"] .'</td>
+	      <td>'. Helpers::Movimiento($b["movimiento"]) .'</td>
 	      <td>'. $b["descripcion"] .'</td>
-	      <td>'. $b["cantidad"] .'</td>
+	      <td>'. Helpers::Signo($b["movimiento"]) .' '. $b["cantidad"] .'</td>
 	      <td>'. $b["fecha"] .'</td>
 	      <td>'. $b["hora"] .'</td>
 	    </tr>';	    
@@ -161,9 +161,9 @@ class Movimientos{
 	    foreach ($a as $b) {
 	echo '<tr>
 	      <th scope="row">'. $b["id"] .'</th>
-	      <td>'. $b["movimiento"] .'</td>
+	      <td>'. Helpers::Movimiento($b["movimiento"]) .'</td>
 	      <td>'. $b["descripcion"] .'</td>
-	      <td>'. $b["cantidad"] .'</td>
+	      <td>'. Helpers::Signo($b["movimiento"]) .' '. $b["cantidad"] .'</td>
 	      <td>'. $b["fecha"] .'</td>
 	      <td>'. $b["hora"] .'</td>
 	    </tr>';	    

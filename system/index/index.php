@@ -15,7 +15,7 @@ $db = new dbConn();
     </div>
     <div class="card-body">
         <h1 class="display-1"><?php echo Index::TotalSocios() ?></h1>
-        <a href="?conexion" class="btn btn-success btn-sm">Ver todos</a>
+        
     </div>
 </div>
 
@@ -25,8 +25,7 @@ $db = new dbConn();
     </div>
     <div class="card-body">
         <h1 class="display-1"><?php echo Index::NumeroAportaciones() ?></h1>
-        <a href="?cobros" class="btn btn-warning btn-sm">Ver todos</a>
-    </div>
+   </div>
 </div>
 
 <div class="card text-center" style="width: 22rem;">
@@ -35,8 +34,7 @@ $db = new dbConn();
     </div>
     <div class="card-body">
         <h1 class="display-1"><?php echo Index::NumeroRetiros() ?></h1>
-        <a href="?generarfacturas" class="btn btn-danger btn-sm">Ver todos</a>
-    </div>
+ </div>
 </div>
 </div>
 
@@ -52,8 +50,7 @@ $db = new dbConn();
     </div>
     <div class="card-body">
         <h1 class="display-4"><?php echo Index::TotalAportaciones() ?></h1>
-        <a href="?conexion" class="btn btn-success btn-sm">Ver todos</a>
-    </div>
+</div>
 </div>
 
 <div class="card text-center" style="width: 22rem;">
@@ -62,8 +59,7 @@ $db = new dbConn();
     </div>
     <div class="card-body">
         <h1 class="display-4"><?php echo Index::TotalRetiros() ?></h1>
-        <a href="?cobros" class="btn btn-warning btn-sm">Ver todos</a>
-    </div>
+</div>
 </div>
 
 <div class="card text-center" style="width: 22rem;">
@@ -72,7 +68,6 @@ $db = new dbConn();
     </div>
     <div class="card-body">
         <h1 class="display-4"><?php echo Index::SaldoTotal() ?></h1>
-        <a href="?generarfacturas" class="btn btn-danger btn-sm">Ver todos</a>
-    </div>
+</div>
 </div>
 </div>

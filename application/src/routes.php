@@ -14,6 +14,16 @@ include_once '../common/Mysqli.php';
 $db = new dbConn();
 
 
+if($_REQUEST["op"]=="0"){ // terminar usuario
+	if($_POST["nombre"] != NULL && $_POST["tipo"] != NULL){
+	include_once '../../system/user/Usuarios.php';
+	$usuarios = new Usuarios;
+	$usuarios->TerminarUsuario(Helpers::Mayusculas($_POST["nombre"]),$_POST["tipo"],sha1($_SESSION['newuser']));	
+	} else {
+	echo "Faltan datos!! ";	
+	}
+}
+
 /// usuarios
 if($_REQUEST["op"]=="1"){
 include_once '../../system/user/Usuarios.php';
@@ -37,17 +47,7 @@ $usuarios = new Usuarios;
 $usuarios->EliminarUsuario($_REQUEST["iden"], $_REQUEST["username"]);
 }
 
-if($_REQUEST["op"]=="4"){ // terminar usuario
-	if($_POST["nombre"] != NULL && $_POST["tipo"] != NULL){
-	include_once '../../system/user/Usuarios.php';
-	$usuarios = new Usuarios;
-	$usuarios->TerminarUsuario(Helpers::Mayusculas($_POST["nombre"]),$_POST["tipo"],sha1($_SESSION['newuser']));	
-	} else {
-	echo "Faltan datos!! ";	
-	}
 
-
-}
 
 
 ///////////////
@@ -61,6 +61,8 @@ if($_REQUEST["op"]=="4"){ // agrega socio
 		$_POST["dui"],
 		$_POST["nit"]
 		);	
+	} else {
+		echo "Faltan datos!";
 	}
 }
 
@@ -86,7 +88,7 @@ if($_REQUEST["op"]=="8"){ // agegar movimiento
 	Movimientos::AddMovimiento(
 		$_POST["socio"],
 		$_POST["movimiento"],
-		$_POST["cantidad"],
+		abs($_POST["cantidad"]), // todos enteros
 		$_POST["descripcion"]
 		);
 	} else { echo "Faltan datos!"; }

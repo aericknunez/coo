@@ -12,7 +12,10 @@
 
     <input type="hidden" id="socio" name="socio" value="<? echo $_REQUEST["iden"]; ?>">
 
-    <input type="text" id="movimiento" name="movimiento" class="form-control mb-2" placeholder="Movimiento">
+<select class="browser-default custom-select  mb-2 mb-2" id="movimiento" name="movimiento">
+  <option selected value="1">Deposito</option>
+  <option value="2">Retiro</option>
+</select>
 
     <input type="text" id="cantidad" name="cantidad" class="form-control mb-2" placeholder="Cantidad">
      <textarea id="descripcion" name="descripcion" class="form-control mb-2" placeholder="Descripcion"></textarea>

@@ -5,12 +5,14 @@ class Helpers{
 
     } 
 
-    function EstadoContrato($string) {
-    if($string == "1") return '<p class="text-success font-weight-bold">Solicitado</p>';
-    if($string == "2") return '<p class="text-primary font-weight-bold">Activo</p>';
-    if($string == "3") return '<p class="text-warning font-weight-bold">Suspendido</p>';
-    if($string == "4") return '<p class="text-danger font-weight-bold">Cancelado</p>';
-    if($string == "5") return '<p class="text-info font-weight-bold">Pausado</p>';
+    function Movimiento($string) {
+    if($string == "1") return '<p class="text-success font-weight-bold">Deposito</p>';
+    if($string == "2") return '<p class="text-danger font-weight-bold">Retiro</p>';
+    }
+
+    function Signo($string) {
+    if($string == "1") return '+';
+    if($string == "2") return '-';
     }
 
 
